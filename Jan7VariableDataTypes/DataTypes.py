@@ -18,7 +18,8 @@ There are 9 Different DataTypes in Python
 
 
 '''
-
+'''
+print('------------------------------------------------------------')
 #Integer
 print("1.INTEGER")
 number_of_apples = 5
@@ -58,3 +59,16 @@ phone_book = {
     "Bob":"555-5678"
 }
 print(type(phone_book))
+print('---------------------------------------------------------------')
+'''
+
+'''
+What is a String
+A string in Python is a sequence of characters put together to represent text. You can think of a string like a string of beads, where each bead is a character, and when you put them together, they create something meaningful, like a word or a sentence. Strings are written inside single quotes (' ') or double quotes (" "). They can represent anything from a single letter to entire paragraphs. Whether you need a simple word or a complete paragraph, strings make it possible.
+
+Example:
+
+name = "Alice"
+quote = 'Hello, world!'
+'''
+
