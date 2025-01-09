@@ -16,3 +16,6 @@
 num1 = int(input("Enter the Number1:"))
 num2 = int(input("Enter the Number2"))
 print(f'Addtion of {num1} and {num2} is {num1 + num2}')
+print(f'Subtraction of {num1} and {num2} is {num1 - num2}')
+print(f'Multiplication of {num1} and {num2} is {num1 * num2}')
+print(f'Division of {num1} and {num2} is {num1 / num2}')
