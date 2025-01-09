@@ -1,6 +1,7 @@
 #Here we Learn how to take input from user 
 #Input method is used for accepting input from the user 
 #Input method always takes an input as a String 
+#Division Result will alwasy be of type float 
 #num1 = input('Enter the Number1')
 
 #print('Number is ',num1,'and data type of num1 is', type(num1))
