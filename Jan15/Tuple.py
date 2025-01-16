@@ -34,3 +34,17 @@ t1 = (1,2,3)
 t2 = (4,5,6)
 t3 = t1 + t2
 print(t3)
+
+#Create a SingleTon Tuple:
+tup = (10,)
+print(tup, type(tup))
+
+
+new_tup = (10,20,30,40)
+#ele1 = new_tup[0]
+#ele2 = new_tup[1]
+
+
+#The below is Called Unmapping of Tuple 
+ele1,ele2,ele3,ele4 = new_tup
+print("Value of Element1", ele1)

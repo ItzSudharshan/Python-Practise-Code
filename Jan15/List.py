@@ -34,6 +34,7 @@ In List we can Store Homogenours as well as Heterogenous types of Data
 In List we can also Store Duplicate Values
 List is an Ordered Collection of Data . order of Insertion will remain as it is in the Output
 List are Mutable . Once we declare the list we can miodify 
+List will accept alwasy iterable Objects
 
 '''
 #Creating a List To create a list, use square brackets [] with items separated by commas.
