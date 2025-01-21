@@ -20,11 +20,19 @@ Sample Output 0
 
 5
 '''
-
-#Finding the Second Largest Element 
+'''
+#Finding the Second Largest Element  (Runner Up Score HackerRank)
 
 n = int(input())
 li = list(map(int, input().split()))
 li = list(set(li))
 li.sort(reverse = True)
 print(li[1])
+
+'''
+#Similar code but find the second smallest element in the array 
+n = int(input())
+li = list(map(int, input().split()))
+li = list(set(li))  # Remove duplicates
+li.sort()  # Sort in ascending order
+print(li[1])  # Second smallest element
