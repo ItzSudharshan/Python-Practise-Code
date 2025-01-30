@@ -1,0 +1,143 @@
+The word "polymorphism" means "many forms." In Python, polymorphism lets you write code that can work with different objects, even if they come from different classes.
+
+
+Types of Polymorphism
+Polymorphism in Python can be achieved in a few different ways:
+
+Duck Typing
+
+Method Overriding
+
+Method Overloading (Simulated)
+
+Operator Overloading
+------------------------------------------------------------------------------
+1) Duck Typing Method
+
+Duck typing is based on the saying, "If it looks like a duck and quacks like a duck, it must be a duck." In Python, duck typing means you can use any object that has the needed behavior, without worrying about its exact type
+
+Example :->
+
+
+class Parrot:
+    def fly(self):
+        print("Parrot is flying high in the sky!")
+
+class Airplane:
+    def fly(self):
+        print("Airplane is taking off!")
+
+# Function using duck typing
+def make_it_fly(thing):
+    thing.fly()
+
+# Creating instances
+parrot = Parrot()
+airplane = Airplane()
+
+# Passing different objects to the same function
+make_it_fly(parrot)   # Output: Parrot is flying high in the sky!
+make_it_fly(airplane) # Output: Airplane is taking off!
+
+--------------------------------------------------------------------------------
+
+2) 2. Method Overriding
+Definition: Method overriding happens when a child class creates its own version of a method that already exists in its parent class. This lets the child class change how the inherited method works to match what it needs.
+
+class Vehicle:
+    def move(self):
+        print("Vehicle is moving")
+
+class Car(Vehicle):
+    def move(self):
+        print("Car is driving on the road")
+
+class Bicycle(Vehicle):
+    def move(self):
+        print("Bicycle is being pedaled on the path")
+
+# Creating instances
+v = Vehicle()
+c = Car()
+b = Bicycle()
+
+# Demonstrating polymorphism
+v.move()   # Output: Vehicle is moving
+c.move()   # Output: Car is driving on the road
+b.move()   # Output: Bicycle is being pedaled on the path
+
+-------------------------------------------------------------------------------------------------
+
+3)3. Method Overloading (Simulated)
+Definition: Python does not directly support method overloading like some other programming languages. This is because Python values simplicity and readability, and having multiple methods with the same name but different arguments can sometimes be confusing. Instead, Python allows you to simulate method overloading by using default arguments or accepting variable arguments. This approach aligns with Python's philosophy of keeping things simple and straightforward, making code easier to read and maintain.
+
+class Calculator:
+    def add(self, a, b, c=0):
+        return a + b + c
+
+# Creating an instance
+calc = Calculator()
+
+# Demonstrating simulated overloading
+print(calc.add(5, 10))       # Output: 15
+print(calc.add(5, 10, 15))   # Output: 30
+
+----------------------------------------------------------------------------------------------------------------
+
+4) Operator overloading lets you change how operators like +, -, and * work with objects of a custom class. For example, imagine adding two custom Point objects that represent coordinates, which makes using + feel natural and intuitive for these objects. This helps make custom classes more intuitive and easy to use.
+
+
+Operator
+
+Function
+
++
+
+__add__()
+
+-
+
+__sub__()
+
+*
+
+__mul__()
+
+/
+
+__truediv__()
+
+%
+
+__mod__()
+
+==
+
+__eq__()
+
+<
+
+__lt__()
+
+>
+
+__gt__()
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __add__(self, other):
+        return Point(self.x + other.x, self.y + other.y)
+
+    def __str__(self):
+        return f"({self.x}, {self.y})"
+
+# Creating instances
+p1 = Point(2, 3)
+p2 = Point(4, 5)
+
+# Adding points using the overloaded + operator
+p3 = p1 + p2
+print(p3)  # Output: (6, 8)
