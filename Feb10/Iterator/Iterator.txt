@@ -1,0 +1,11 @@
+An iterator lets you go through a sequence of items one by one. Imagine a playlist of songs. Each time you hit "next," you play the next song on the list
+
+Iterable: An object you can loop over, like a list, tuple, or string.
+Iterator: An object that keeps track of where it is while looping through an iterable.
+Examples
+
+An iterator in Python needs to have two important methods:
+
+__iter__(): This sets up the iterator. It returns the iterator object itself so it knows where to start.
+
+__next__(): This gives you the next item from the sequence. When there are no more items, it raises a StopIteration exception.

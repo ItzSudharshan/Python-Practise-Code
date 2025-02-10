@@ -1,0 +1,8 @@
+Generators in Python are a way to create iterators in a simple and efficient manner. They allow you to iterate over data without storing it all in memory at once.
+
+Yield vs. Return: Unlike return, which exits the function, yield pauses the function and saves its state, allowing it to resume right where it left off.
+
+Usage: Generators are useful for dealing with large data sets or streams where you don’t want to load everything into memory at once.
+
+
+Generators are created using functions that include the yield keyword. The yield keyword is what makes a function a generator. Instead of returning all values at once, it sends back one value and pauses until the next value is requested.
