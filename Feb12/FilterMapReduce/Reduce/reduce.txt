@@ -1,0 +1,9 @@
+The filter() function selects items from an iterable based on a condition, keeping only those for which the function returns True.
+
+
+
+map(): Applies a function to every item in an iterable. Think of it as an assistant making calls to all your friends.
+
+filter(): Filters out items from an iterable based on a condition. It's like picking only the red apples from a basket of fruits.
+
+reduce(): Reduces all items in an iterable to a single value by applying a function cumulatively. Imagine passing a bill around the table, with everyone adding their cost until you get the total.
