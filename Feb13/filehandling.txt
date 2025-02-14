@@ -1,0 +1,12 @@
+File handling in Python allows you to store, retrieve, and modify data outside of your program, similar to writing in a diary. This helps in saving information permanently for future access.
+
+Opening: Like opening a book.
+Reading: Like reading the contents.
+Writing: Like adding new entries.
+Closing: Like closing the book.
+Key Points
+Opening a File: Use open() with modes ('r', 'w', 'a', 'r+').
+Reading a File: Use read(), readline(), or readlines().
+Writing to a File: Use 'w' mode with write(), but it overwrites everything.
+Appending to a File: Use 'a' mode to add data without losing the existing content.
+Closing a File: Always close your files to free up resources. Using the with statement helps you do this automatically.
